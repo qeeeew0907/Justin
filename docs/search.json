@@ -1,30 +1,16 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "최대우도법(MLE) 한 장 정리",
-    "section": "",
-    "text": "수식 줄 앞에 공백/백틱(코드블록) 넣지 않기\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html#베르누이p",
-    "href": "index.html#베르누이p",
-    "title": "최대우도법(MLE) 한 장 정리",
-    "section": "1) 베르누이((p))",
-    "text": "1) 베르누이((p))\n\n(X_i, P(X_i=1)=p).\n로그우도: \\[\n\\ell(p)=\\sum_{i=1}^n\\!\\Big[x_i\\log p+(1-x_i)\\log(1-p)\\Big].\n\\]\n미분=0을 풀면 \\[\n\\hat p=\\bar X=\\frac{1}{n}\\sum_{i=1}^n x_i\n\\] (표본비율이 MLE)."
-  },
-  {
-    "objectID": "index.html#정규2",
-    "href": "index.html#정규2",
-    "title": "최대우도법(MLE) 한 장 정리",
-    "section": "2) 정규((,^2))",
-    "text": "2) 정규((,^2))\n\n(X_iN(,^2)).\n로그우도: \\[\n\\ell(\\mu,\\sigma^2)\n=-\\frac{n}{2}\\log(2\\pi\\sigma^2)\n-\\frac{1}{2\\sigma^2}\\sum_{i=1}^n(x_i-\\mu)^2.\n\\]\n최적해: \\[\n\\hat\\mu=\\bar X,\\qquad\n\\hat\\sigma^2=\\frac{1}{n}\\sum_{i=1}^n(x_i-\\bar X)^2.\n\\] &gt; 주의: MLE 분산은 분모 (n) (언바이어스 분산은 (n-1))."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "최대우도법(MLE) 한 장 정리",
+    "section": "",
+    "text": "수식 줄 앞에 공백/백틱(코드블록) 넣지 않기\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   }
 ]
