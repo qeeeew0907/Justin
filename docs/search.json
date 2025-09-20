@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "최대우도법(MLE) 한 장 정리",
     "section": "",
-    "text": "“지금 관측한 데이터가 가장 그럴듯하게 나오게 만드는 파라미터를 고르자.”"
+    "text": "수식 줄 앞에 공백/백틱(코드블록) 넣지 않기\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "index.html#베르누이p",

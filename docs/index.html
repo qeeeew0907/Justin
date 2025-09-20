@@ -101,35 +101,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -170,22 +141,8 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#핵심-아이디어" id="toc-핵심-아이디어" class="nav-link active" data-scroll-target="#핵심-아이디어">핵심 아이디어</a></li>
-  <li><a href="#절차-4단계" id="toc-절차-4단계" class="nav-link" data-scroll-target="#절차-4단계">절차 (4단계)</a></li>
-  <li><a href="#초간단-예시-2개" id="toc-초간단-예시-2개" class="nav-link" data-scroll-target="#초간단-예시-2개">초간단 예시 2개</a>
-  <ul class="collapse">
-  <li><a href="#베르누이p" id="toc-베르누이p" class="nav-link" data-scroll-target="#베르누이p">1) 베르누이((p))</a></li>
-  <li><a href="#정규2" id="toc-정규2" class="nav-link" data-scroll-target="#정규2">2) 정규((,^2))</a></li>
-  </ul></li>
-  <li><a href="#점근-성질요약" id="toc-점근-성질요약" class="nav-link" data-scroll-target="#점근-성질요약">점근 성질(요약)</a></li>
-  <li><a href="#메모" id="toc-메모" class="nav-link" data-scroll-target="#메모">메모</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -209,75 +166,8 @@ window.Quarto = {
 </header>
 
 
-<section id="핵심-아이디어" class="level1">
-<h1>핵심 아이디어</h1>
-<p>“지금 관측한 데이터가 가장 그럴듯하게 나오게 만드는 <strong>파라미터</strong>를 고르자.”</p>
-</section>
-<section id="절차-4단계" class="level1">
-<h1>절차 (4단계)</h1>
-<ol type="1">
-<li><strong>모형 가정</strong>: 데이터 (x_1,,x_n)이 (f(x))에서 i.i.d.로 나왔다고 둔다.<br>
-</li>
-<li><strong>우도함수</strong>(likelihood): 관측값에서의 확률(밀도)의 곱<br>
-<span class="math display">\[
-L(\theta)=\prod_{i=1}^n f(x_i\mid\theta),
-\qquad
-\ell(\theta)=\log L(\theta)=\sum_{i=1}^n \log f(x_i\mid\theta).
-\]</span></li>
-<li><strong>최대화</strong>: (=_()) (점수방정식 (()/)을 푼다).<br>
-</li>
-<li><strong>결과 해석</strong>: ()가 MLE.</li>
-</ol>
-<hr>
-</section>
-<section id="초간단-예시-2개" class="level1">
-<h1>초간단 예시 2개</h1>
-<section id="베르누이p" class="level2">
-<h2 class="anchored" data-anchor-id="베르누이p">1) 베르누이((p))</h2>
 <ul>
-<li>(X_i,&nbsp;P(X_i=1)=p).</li>
-<li>로그우도: <span class="math display">\[
-\ell(p)=\sum_{i=1}^n\!\Big[x_i\log p+(1-x_i)\log(1-p)\Big].
-\]</span></li>
-<li>미분=0을 풀면 <span class="math display">\[
-\hat p=\bar X=\frac{1}{n}\sum_{i=1}^n x_i
-\]</span> (표본비율이 MLE).</li>
-</ul>
-</section>
-<section id="정규2" class="level2">
-<h2 class="anchored" data-anchor-id="정규2">2) 정규((,^2))</h2>
-<ul>
-<li>(X_iN(,^2)).</li>
-<li>로그우도: <span class="math display">\[
-\ell(\mu,\sigma^2)
-=-\frac{n}{2}\log(2\pi\sigma^2)
--\frac{1}{2\sigma^2}\sum_{i=1}^n(x_i-\mu)^2.
-\]</span></li>
-<li>최적해: <span class="math display">\[
-\hat\mu=\bar X,\qquad
-\hat\sigma^2=\frac{1}{n}\sum_{i=1}^n(x_i-\bar X)^2.
-\]</span> &gt; 주의: MLE 분산은 분모 (n) (언바이어스 분산은 (n-1)).</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="점근-성질요약" class="level1">
-<h1>점근 성질(요약)</h1>
-<p>큰 (n)에서 <span class="math display">\[
-\sqrt n(\hat\theta-\theta_0)\ \xRightarrow{D}\
-N\!\big(0,\ \mathcal I(\theta_0)^{-1}\big),
-\]</span> 여기서 (I())는 피셔 정보.<br>
-신뢰구간(월드): (z_{/2}()).</p>
-<hr>
-</section>
-<section id="메모" class="level1">
-<h1>메모</h1>
-<ul>
-<li><p>인라인 수식: <code>$a^2+b^2$</code> → (a<sup>2+b</sup>2)<br>
-</p></li>
-<li><p>블록 수식: <code>$$ ... $$</code><br>
-</p></li>
-<li><h2 id="수식-줄-앞에-공백백틱코드블록-넣지-않기" class="anchored" data-anchor-id="메모">수식 줄 앞에 공백/백틱(코드블록) 넣지 않기</h2></li>
+<li><h2 id="수식-줄-앞에-공백백틱코드블록-넣지-않기" class="anchored">수식 줄 앞에 공백/백틱(코드블록) 넣지 않기</h2></li>
 </ul>
 <p>This is a Quarto website.</p>
 <p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
@@ -289,7 +179,6 @@ N\!\big(0,\ \mathcal I(\theta_0)^{-1}\big),
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
