@@ -6,6 +6,8 @@ This is a Quarto website.
 
 ㅇㄴㅇㅁㄴㅇㅁㄴㅇ
 
+왜 안 돼 ㅠㅠ
+
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ```{r}
