@@ -4,9 +4,7 @@ title: "최대우도법(MLE) 한 장 정리"
 
 This is a Quarto website.
 
-ㅇㄴㅇㅁㄴㅇㅁㄴㅇ
-
-왜 안 돼 ㅠㅠ
+수정 됐나요
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
