@@ -1,7 +1,8 @@
 project:
   type: website
-  output-dir: docs   # <- Pages에서 main / docs로 서빙
-
+  output-dir: docs
+  resources: [styles.css]
+  
 website:
   title: "Justin.github.io"
   site-url: https://qeeeew0907.github.io/Justin/ 
@@ -20,11 +21,11 @@ website:
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: [cosmo, brand]
     css: styles.css
     toc: true
 
 editor: visual
+
+
 
