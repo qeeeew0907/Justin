@@ -26,12 +26,6 @@ format:
       - brand  
     css: styles.css
     toc: true
-    toc-location: right      # 오른쪽에 고정
-    toc-depth: 3             # h3까지 표시(원하면 2~6)
-    number-sections: true    # 1., 1.1 같은 번호 자동
-    anchor-sections: true    # 제목에 앵커(링크) 아이콘
-    page-layout: article     # 글 본문 레이아웃
-    page-navigation: true  
     
 editor: visual
 
