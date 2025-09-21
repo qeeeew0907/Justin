@@ -2,4 +2,3 @@
 title: "nonparamatic"
 output: html_document
 ---
-
