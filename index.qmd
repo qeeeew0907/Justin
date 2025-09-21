@@ -1,5 +1,5 @@
 ---
-title: "YulHa's beta test"
+title: "이것은 내 포털 사이트"
 ---
 
 update 방법:
@@ -9,11 +9,9 @@ update 방법:
 ```
 
 1.  intex.qmd 수정 후 render
-2.   teminal에 아래 코드 입력
+2.  teminal에 아래 코드 입력
 
-git add -A
-git commit -m "update site"
-git push
+git add -A git commit -m "update site" git push
 
 3.  잘 됐는지, github/pages-build-deployment에서 Action 확인
 
