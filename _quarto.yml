@@ -1,29 +1,30 @@
 project:
   type: website
-  output-dir: docs
-  
+  output-dir: docs   # <- Pages에서 main / docs로 서빙
+
 website:
-  title: "Justin.github.io"  
+  title: "Justin.github.io"
+  site-url: https://justin.github.io   # 선택(권장): 정규화된 절대 URL
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
   sidebar:
-    style: "docked"         # "floating"으로 하면 접히는 띄워진 사이드바
-    search: true            
+    style: docked
+    search: true
     contents:
       - section: "비모수"
         contents:
-          - nonparamatic.Rmd
+          - nonparamatic.Rmd   # 파일명/대소문자 정확히 일치해야 함
 
 format:
   html:
     theme:
       - cosmo
-      - brand  
+      - brand
     css: styles.css
     toc: true
-    
+
 editor: visual
 
