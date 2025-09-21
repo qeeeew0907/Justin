@@ -11,6 +11,8 @@ update 방법:
 1.  intex.qmd 수정 후 render
 2.  teminal에 아래 코드 입력
 
+ㅋㅋㅋ
+
 git add -A
 
 git commit -m "update site"
