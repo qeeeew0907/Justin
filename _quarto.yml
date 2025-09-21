@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Justin.github.io"
-  site-url: https://justin.github.io   # 선택(권장): 정규화된 절대 URL
+  site-url: https://qeeeew0907.github.io/Justin/ 
   navbar:
     left:
       - href: index.qmd
