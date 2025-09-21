@@ -1,32 +1,5 @@
 ---
-title: "이것은 내 포털 사이트"
+title: "홈"
 ---
 
-update 방법:
-
-```{=html}
-------------------------------------------------------
-```
-
-1.  intex.qmd 수정 후 render
-2.  teminal에 아래 코드 입력
-
-quarto render
-
-git add -A
-
-git commit -m "update site"
-
-git push
-
-3.  잘 됐는지, github/pages-build-deployment에서 Action 확인
-
-------------------------------------------------------------------------
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-print(1:10)
-```
-
-\
+사이트 초기화 테스트 페이지입니다.

@@ -2,15 +2,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "이것은 내 포털 사이트",
+    "title": "홈",
     "section": "",
-    "text": "update 방법:\n------------------------------------------------------\n\nintex.qmd 수정 후 render\nteminal에 아래 코드 입력\n\nquarto render\ngit add -A\ngit commit -m “update site”\ngit push\n\n잘 됐는지, github/pages-build-deployment에서 Action 확인\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nprint(1:10)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+    "text": "사이트 초기화 테스트 페이지입니다."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "소개 페이지"
   }
 ]
