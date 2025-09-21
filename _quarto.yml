@@ -4,8 +4,6 @@ project:
   
 website:
   title: "Justin.github.io"  
-  base-url: /Justin/                  # ← 프로젝트 페이지면 꼭 필요
-  site-url: https://qeeeew0907.github.io/Justin/
   navbar:
     left:
       - href: index.qmd
