@@ -2,30 +2,28 @@ project:
   type: website
   output-dir: docs
   resources: [styles.css]
-  
+
 website:
   title: "Justin.github.io"
-  site-url: https://qeeeew0907.github.io/Justin/ 
+  site-url: https://qeeeew0907.github.io/Justin/
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
   sidebar:
     style: docked
     search: true
     contents:
       - section: "비모수"
         contents:
-          - nonparamatic.Rmd   # 파일명/대소문자 정확히 일치해야 함
+          - nonparamatic.qmd   # 실제 파일명과 일치하게!
 
 format:
   html:
-    theme: [cosmo, brand]
+    theme: cosmo
     css: styles.css
     toc: true
 
 editor: visual
-
-
-
